@@ -9,39 +9,11 @@ public class HlavniProgram {
 
         zofka = new Turtle();
 
-        zofka.setLocation(485, 100);
-
-        zofka.turnRight(45);
-        zofka.move(90);
-        zofka.turnRight(90);
-        zofka.move(90);
-        zofka.turnRight(135);
-        zofka.move(125);
-        zofka.turnLeft(90);
-        zofka.move(150);
-        zofka.turnLeft(90);
-        zofka.move(125);
-        zofka.turnLeft(90);
-        zofka.move(150);
-
         zofka.setLocation(50, 100);
-
 
         for (int i = 0; i < 3; i++) {
 
-
-            zofka.turnRight(45);
-            zofka.move(90);
-            zofka.turnRight(90);
-            zofka.move(90);
-            zofka.turnRight(135);
-            zofka.move(125);
-            zofka.turnLeft(90);
-            zofka.move(150);
-            zofka.turnLeft(90);
-            zofka.move(125);
-            zofka.turnLeft(90);
-            zofka.move(150);
+            drawHouse(zofka);
 
             zofka.penUp();
             zofka.turnRight(90);
@@ -50,9 +22,18 @@ public class HlavniProgram {
             zofka.penDown();
         }
 
+    }
 
-
-
+    private void drawHouse(Turtle zofka) {
+        for (int i = 0; i < 4; i++) {
+            zofka.turnRight(90);
+            zofka.move(90);
+        }
+        zofka.turnRight(45);
+        zofka.move(63.64);
+        zofka.turnRight(90);
+        zofka.move(63.64);
+        zofka.turnLeft(135);
     }
 
 }
