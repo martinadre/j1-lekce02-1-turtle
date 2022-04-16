@@ -11,6 +11,7 @@ public class HlavniProgram {
 
         zofka.setLocation(50, 100);
 
+
         for (int i = 0; i < 3; i++) {
 
             drawHouse(zofka);
@@ -21,19 +22,22 @@ public class HlavniProgram {
             zofka.turnLeft(90);
             zofka.penDown();
         }
+        
+
+
 
     }
 
-    private void drawHouse(Turtle zofka) {
+    private void drawHouse(Turtle name) {
         for (int i = 0; i < 4; i++) {
-            zofka.turnRight(90);
-            zofka.move(90);
+            name.turnRight(90);
+            name.move(90);
         }
-        zofka.turnRight(45);
-        zofka.move(63.64);
-        zofka.turnRight(90);
-        zofka.move(63.64);
-        zofka.turnLeft(135);
+        name.turnRight(45);
+        name.move(63.64);
+        name.turnRight(90);
+        name.move(63.64);
+        name.turnLeft(135);
     }
 
 }
