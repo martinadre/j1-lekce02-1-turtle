@@ -22,10 +22,10 @@ public class HlavniProgram {
             zofka.turnLeft(90);
             zofka.penDown();
         }
+        Turtle efka = new Turtle();
+        efka.setLocation(350, 100);
+        drawHouse(efka);
         
-
-
-
     }
 
     private void drawHouse(Turtle name) {
